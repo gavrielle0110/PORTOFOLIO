@@ -1,0 +1,86 @@
+:root {
+    --maincolor : #2E4374;
+    --secondcolor : #4B527E;
+    --addcolor : #000000;
+    --othercolor : #ffff;
+    --backcolor : #E5C3A6;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg,#2E4374,#4B527E,#83A2FF,#FFE3BB,#FFD28F);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    min-height: 100px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/* background */
+.secback {
+    background-color: var(--maincolor);
+    margin-top: 25px;
+    padding-top: 25px;
+}
+.thback {
+    background-color: var(--secondcolor);
+    margin-top: 40px;
+}
+/* end  */
+
+/* navbar */
+.nav-link.active {
+    color: var(--secondcolor);
+}
+/* end navbar */
+
+/* section hero */
+.container {
+    color: var(--othercolor);
+}
+
+#hero {
+    min-height: 100vh;
+}
+
+#hero h2 {
+    font-weight: 300;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+.social svg{
+    margin-left: .7em;
+    margin-bottom: 10px;
+}
+
+/* about */
+hr {
+    height: 5px;
+    color: #000000;
+    margin: 0 auto;
+    opacity: 100%;
+}
+ #about {
+    min-height: 300px;
+    width: 100%;
+    color: var(--othercolor);
+    padding-top: 80px;
+    padding-bottom: 80px;
+   
+ }
+
+/* end about */
